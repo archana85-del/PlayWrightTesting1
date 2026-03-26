@@ -33,6 +33,9 @@ export default defineConfig({
     trace: 'on-first-retry',
     headless: false,
     viewport:{width:1528,height:732}  ,
+    //add two storage states to run tests with different login credentials
+    //storageState:['resources/storageState.json', 'resources/storageState2.json' ],
+ 
     //screenshot:'on',
     //video:'on'
   },
@@ -40,9 +43,20 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] ,viewport:{width:1528,height:732}  ,channel: 'chromium'}
+     
+      name: 'orangehrm',
+      use: { ...devices['Desktop Chrome'] ,viewport:{width:1528,height:732}  ,channel: 'chromium',
+      storageState:'resources/storageState2.json'}
+      
     },
+    {
+     
+      name: 'bankingApplication',
+      use: { ...devices['Desktop Chrome'] ,viewport:{width:1528,height:732}  ,channel: 'chromium',
+      storageState:'resources/storageState.json'}
+      
+    },
+    
 
     /*{
       name: 'firefox',

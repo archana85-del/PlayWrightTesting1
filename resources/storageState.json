@@ -1,0 +1,62 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.516133310.1774496754",
+      "domain": ".senthilsmartqahub.blogspot.com",
+      "path": "/",
+      "expires": 1809056753.53545,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "test_cookie",
+      "value": "CheckForPermission",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1774497653.111229,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_11XN7VRVP3",
+      "value": "GS2.1.s1774496753$o1$g1$t1774496757$j56$l0$h0",
+      "domain": ".senthilsmartqahub.blogspot.com",
+      "path": "/",
+      "expires": 1809056757.624508,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://senthilsmartqahub.blogspot.com",
+      "localStorage": [
+        {
+          "name": "userRole",
+          "value": "SenthilSmartQAHub"
+        },
+        {
+          "name": "loggedIn",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::h",
+          "value": "1774496757538"
+        },
+        {
+          "name": "rc::a",
+          "value": "NXd4OXExcmVqYnQ1"
+        }
+      ]
+    }
+  ]
+}
