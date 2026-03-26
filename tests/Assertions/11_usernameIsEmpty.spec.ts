@@ -13,6 +13,7 @@ test('Verify Success Message is hidden before clicking Submit', async ({ page })
     const isEmpty =  await usernameField.inputValue();
     
     expect(isEmpty).toBe('');
+    await expect(usernameField).toBeEmpty();
 
     //how to use toBeEmpty assertion here ?
     

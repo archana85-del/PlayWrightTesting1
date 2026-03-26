@@ -11,7 +11,8 @@ test('Verify Delete Button is displayed after clicking Submit', async ({ page })
 
     await page.locator("#submitBtn").click();
     await expect(deleteAccountBtn).toBeVisible();
-    //Wbhy is this assert failing ?
-   // expect(deleteAccountBtn).toBeDisabled
+    //Why is this assert failing ?
+   const isDeleteBtnEnabled = await deleteAccountBtn.isEnabled();
+   expect(isDeleteBtnEnabled).toBe(true);
     await page.waitForTimeout(3000);
 });
